@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinterio</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- google fonts start  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- google fonts end  -->
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    
+    <div class="hero container">
+        <img src="./B10-Assignment-03-main/assets/banner.png" alt="">
+        <h1>A barn house of this design has a striking appearance</h1>
+        <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+        <button class="btn btn-primary">View Details</button>
+    </div>
+
+
+    <script>
+        const menubar = document.getElementById('menubar');
+        const navOpen = document.getElementById('navOpen');
+        const navClose = document.getElementById('navClose');
+
+        document.getElementById("navOpen").addEventListener(('click'), () => {
+            menubar.style.display = 'block';
+            menubar.classList.remove('toggle');
+            navOpen.style.display = 'none';
+            navClose.classList.remove('nav-close');
+            navClose.style.display = 'block'
+        });
+
+        document.getElementById("navClose").addEventListener(('click'), () => {
+            menubar.style.display = 'none';
+            menubar.classList.remove('toggle');
+            navClose.style.display = 'none';
+            navOpen.style.display = 'block'
+        });
+    </script>
+</body>
+
+</html>
